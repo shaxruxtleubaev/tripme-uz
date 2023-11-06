@@ -26,6 +26,16 @@ class Client(Model):
         max_length=32
     )
 
+    tour_name = CharField(
+        'Имя тура',
+        max_length=128
+    )
+
+    tour_price = CharField(
+        'Цена тура',
+        max_length=128
+    )
+
     def __str__(self):
         return f'{self.fullname}'
     
